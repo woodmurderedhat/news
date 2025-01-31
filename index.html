@@ -15,6 +15,21 @@
         <!-- Articles will be dynamically loaded here -->
     </main>
     <script src="script.js"></script>
-    <script src="generator.js"></script>
+    <script>
+        document.getElementById('generate-articles').addEventListener('click', () => {
+            fetch('generate-articles')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Articles generated:', data);
+                    location.reload();
+                })
+                .catch(error => console.error('Error generating articles:', error));
+        });
+    </script>
 </body>
 </html>
