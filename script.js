@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const articlesContainer = document.getElementById('articles-container');
 
-    fetch('articles')
+    fetch('https://woodmurderedhat.github.io/news/articles.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
