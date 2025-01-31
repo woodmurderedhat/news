@@ -29,3 +29,24 @@ article p {
     color: #666;
     font-size: 0.9rem;
 }
+
+.excerpt {
+    margin-bottom: 1rem;
+}
+
+.full-content {
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
